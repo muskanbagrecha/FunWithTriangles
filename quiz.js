@@ -2,7 +2,7 @@ const quizForm = document.querySelector(".quiz-form");
 const submit = document.querySelector("#submit");
 var result = document.querySelector("#result");
 
-const answers = [180, 90, 10,2];
+const answers = ["180", "90", "10","2", "scalene", "obtuse-angled", "acute-angled"];
 
 function check()
 {
@@ -17,7 +17,11 @@ function check()
         }
         index+=1;
     }
-    result.innerText = "Score is : " + score + "/4"
+    if(score==formData.entries().length)
+    {
+        result.innerHTML = "You are a genius";
+    }
+    result.innerHTML = "Score is : " + score + "/7";
 }
 
 submit.addEventListener("click", check);

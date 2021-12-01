@@ -106,10 +106,11 @@ input{
 }
 
 input[type="radio"] {
-    -ms-transform: scale(0.8); /* IE 9 */
-    -webkit-transform: scale(0.8); /* Chrome, Safari, Opera */
-    transform: scale(0.8);
+    -ms-transform: scale(0.6); /* IE 9 */
+    -webkit-transform: scale(0.6); /* Chrome, Safari, Opera */
+    transform: scale(0.6);
     display: inline-block;
+    padding: 3px;
 }
 
 .label-options{
@@ -151,3 +152,9 @@ footer a{
 footer a:visited{
     color: black;
 }
+
+.question-container input[type="radio"]{
+    font-size: 20px;
+    padding: 2px;
+}
+
